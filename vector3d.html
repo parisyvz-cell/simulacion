@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vector 3D</title>
+</head>
+<body>
+
+<svg width="600" height="450">
+
+  <!-- Ejes -->
+  <line x1="300" y1="350" x2="300" y2="50" stroke="black" stroke-width="2"/>
+  <text x="305" y="60">z</text>
+
+  <line x1="300" y1="350" x2="520" y2="350" stroke="black" stroke-width="2"/>
+  <text x="525" y="355">x</text>
+
+  <line x1="300" y1="350" x2="120" y2="220" stroke="black" stroke-width="2"/>
+  <text x="105" y="215">y</text>
+
+  <!-- Origen -->
+  <circle cx="300" cy="350" r="4"/>
+  <text x="285" y="370">O</text>
+
+  <!-- Punto P -->
+  <circle cx="430" cy="180" r="5" fill="red"/>
+  <text x="440" y="175">P(Vx,Vy,Vz)</text>
+
+  <!-- Flecha vector -->
+  <defs>
+    <marker id="arrow"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="3"
+      orient="auto">
+      <polygon points="0 0, 10 3, 0 6"/>
+    </marker>
+  </defs>
+
+  <line x1="300" y1="350"
+        x2="430" y2="180"
+        stroke="blue"
+        stroke-width="3"
+        marker-end="url(#arrow)"/>
+
+  <text x="360" y="260">v⃗</text>
+
+</svg>
+
+</body>
+</html>
