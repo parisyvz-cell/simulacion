@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prueba Notion</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin-top:40px;
+}
+button{
+    font-size:20px;
+    padding:10px 20px;
+}
+</style>
+</head>
+<body>
 
+<h1>¡Hola Notion!</h1>
+
+<p id="texto">Haz clic en el botón.</p>
+
+<button onclick="cambiarTexto()">
+    Probar JavaScript
+</button>
+
+<script>
+function cambiarTexto(){
+    document.getElementById("texto").innerHTML =
+    "¡La simulación está funcionando!";
+}
+</script>
+
+</body>
+</html>
